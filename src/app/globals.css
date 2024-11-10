@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.btnhover:hover {
+    background-color: #FBAF85;
+
+}
+.btnhover {
+    transition: background-color ease-in 0.2s;
+}
+
+input[type=radio]{
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-clip: content-box;
+    border: 2px solid rgb(192, 192, 190);
+    
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #D87C49;
+    padding: 4px;
+    border: 2px solid rgb(202, 198, 198);
+  }
+
+
+
+.bg-hero {
+    background-image: url('../../public/assets/home/desktop/image-hero.jpg');
+    height: 620px;
+    background-position: top;
+    background-position-y: -110px;
+}
+.bg-hero-mobile {
+    background-image: url('../../public/assets/home/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    height: 620px;
+    background-size: 500px;
+    background-position-y: -180px ;
+    background-position-x: center;
+    
+}
+
+.bg-hero-tablet {
+    background-image: url('../../public/assets/home/tablet/image-header.jpg');
+}
+
+.secondspeaker-bg {
+    background-image: url('../../public/assets/home/desktop/image-speaker-zx7.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+@media (530px <= width <= 950px) {
+    .secondspeaker-bg {
+        background-image: url('../../public/assets/home/tablet/image-speaker-zx7.jpg');
+    }
+}
+@media (width < 650px) {
+    .secondspeaker-bg {
+        background-image: url('../../public/assets/home/mobile/image-speaker-zx7.jpg');
+    }
+}
+.earphones-bg {
+    background-image: url('../../public/assets/home/desktop/image-earphones-yx1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media (530px <= width <= 950px) {
+    .earphones-bg {
+        background-image: url('../../public/assets/home/tablet/image-earphones-yx1.jpg');
+    }
+}
+@media (width < 530px) {
+    .earphones-bg {
+        background-image: url('../../public/assets/home/mobile/image-earphones-yx1.jpg');
+    }
+}
+
+/* HOME ABOUT US  */
+.about-bg {
+    background-image: url('../../public/assets/shared/desktop/image-best-gear.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 150px;
+}
+@media (530px <= width <= 950px) {
+    .about-bg {
+        background-image: url('../../public/assets/shared/tablet/image-best-gear.jpg');
+    }
+}
+@media (width < 530px) {
+    .about-bg {
+        background-image: url('../../public/assets/shared/mobile/image-best-gear.jpg');
+        
+    }
+}
